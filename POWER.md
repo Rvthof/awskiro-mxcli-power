@@ -10,6 +10,8 @@ author: "Mendix MxCLI Power"
 
 This power gives Kiro deep knowledge of Mendix development via MxCLI and MDL (Mendix Definition Language). It covers the full development lifecycle: domain modelling, microflows, pages, security, navigation, integrations, testing, and quality assessment.
 
+> **Using Mendix via MCP instead?** If your project uses the Mendix Studio Pro MCP server, use the [Mendix MCP Power](https://github.com/Rvthof/kiropower-mendix-mcp) instead. This power is specifically for MxCLI/MDL-based development.
+
 ---
 
 # Onboarding
@@ -158,6 +160,10 @@ Load the appropriate steering file(s) based on what you're working on:
 | Oracle Forms migration | `migrate-oracle-forms.md` |
 
 ## Core Principles (Always Apply)
+
+### 0. Confirm the approach: MxCLI vs MCP
+
+This power is for **MxCLI/MDL** workflows only. If the user mentions MCP, Studio Pro MCP server, or wants Kiro to talk directly to Studio Pro through an MCP client, stop and point them to the [Mendix MCP Power](https://github.com/Rvthof/kiropower-mendix-mcp) instead. Do not use MxCLI commands or MDL syntax for MCP-based workflows.
 
 ### 1. Always use the local mxcli binary
 ```bash

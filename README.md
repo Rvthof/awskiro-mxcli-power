@@ -35,6 +35,20 @@ The power has no MCP server — it's documentation-only. MxCLI itself is a local
 
 ---
 
+## MxCLI or MCP?
+
+There are two Mendix Kiro Powers — pick the one that matches how your project talks to Mendix:
+
+| | This power — MxCLI | [Mendix MCP Power](https://github.com/Rvthof/kiropower-mendix-mcp) |
+|---|---|---|
+| **Approach** | CLI binary + MDL scripts | Studio Pro MCP server |
+| **How it works** | Write `.mdl` files, validate and execute via `./mxcli` | Kiro calls Mendix Studio Pro directly through MCP |
+| **Setup** | `mxcli` binary in project root | Studio Pro MCP server running |
+
+If you're not sure which to use: if your project root contains an `mxcli` binary, you're in the right place. If you have a Mendix Studio Pro MCP server configured, use the MCP power instead.
+
+---
+
 ## Requirements
 
 You need a Mendix project set up with MxCLI. There are two ways to get there:
