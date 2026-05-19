@@ -194,3 +194,9 @@ Never use `System.User` as an association target. Always use `Administration.Acc
 
 ### 6. Write MDL files in chunks
 `fsWrite` truncates beyond ~50 lines. Always use `fsWrite` for the first ~40 lines, then `fsAppend` for subsequent chunks. See `mdl-file-writing.md`.
+
+## License and support
+
+This power integrates with [MxCLI](https://github.com/mendix/mxcli) (Apache-2.0).
+- [Privacy Policy](https://www.mendix.com/trust/mendix-and-data-privacy/)
+- [Support](https://mendix.com/support)
